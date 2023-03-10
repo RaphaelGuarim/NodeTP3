@@ -7,6 +7,7 @@ Rendez-vous sur le [portail développeur de Discord](https://discord.com/develop
 
 Cliquez sur le bouton "New Application". Donnez un nom à votre bot (Node_NOM_Prénom) et cliquez sur "Create".
 Vous allez arriver sur la page de votre bot. A gauche, vous pouvez voir un onglet "Bot", cliquez sur le bouton "Add Bot". Un bouton "Reset Token" va apparaître, cliquez dessus **et copiez-collez votre token dans un document texte**, celui-ci est crucial.
+Token : MTA4Mzc0NTMzMTIwMTcyNDQyNg.G4pbcL.AyQqvm2Nlha9hFoxhqA8XFts9fAU9HyIwpZgcY
 
 Après ça, rendez-vous dans l'onglet "OAuth2", et "URL generator". Sélectionnez les options *bot* et *applications.commands*. Cliquez enfin sur "Copy" et collez l'URL dans le navigateur. Sélectionnez votre serveur et ajoutez-le dessus.
 
