@@ -6,18 +6,19 @@
   "dependencies": {
     "discord.js": "^14.7.1",
     "eslint": "^8.31.0",
-    "nodemon": "^2.0.21",
     "undici": "^5.20.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.4.0",
     "@commitlint/config-conventional": "^17.4.0",
     "husky": "^8.0.0",
+    "nodemon": "^2.0.22",
     "standard-version": "^9.5.0"
   },
   "scripts": {
     "deploy": "node src/deploy-commands.js",
-    "start": "node src/app.js",
+    "start": "node app.js",
+    "dev": "nodemon app.js",
     "release": "standard-version",
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
