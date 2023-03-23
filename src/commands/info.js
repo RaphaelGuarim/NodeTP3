@@ -1,4 +1,6 @@
 const { SlashCommandBuilder } = require('discord.js')
+const subcommand = require('./user.js');
+const subcommand2 = require('./server.js');
 
 module.exports = {
     data: new SlashCommandBuilder()
@@ -9,12 +11,11 @@ module.exports = {
                 .setDescription("Choice of the command")),
     async execute(interaction) {
         if (interaction.options.getString('targets')=='server'){
-            console.log("SERVEUR");
+            subcommand2.execute(interaction);
         }else if (interaction.options.getString('targets')=='user'){
-            console.log("USER");
+            subcommand.execute(interaction);
         }else{
-            console.log("Erreur dans la commande")
+            await interaction.reply('Erreur sur la commande : /'+interaction.options.getString('targets'));
         }
-        await interaction.reply(interaction.options.getString('targets'));
     },
 }
