@@ -4,7 +4,7 @@ const { SlashCommandBuilder } = require('discord.js')
 module.exports = {
     data: new SlashCommandBuilder()
         .setName('cat')
-        .setDescription('cat a file'),
+        .setDescription('miaou'),
     async execute(interaction) {
         const catResult = await request('https://aws.random.cat/meow')
         const { file } = await catResult.body.json()
